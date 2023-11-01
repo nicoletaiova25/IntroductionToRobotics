@@ -30,7 +30,7 @@ The main components we will use specifically for this task are an RGB led, 3 pot
 <details>
 <p><b>Assignment details 🗞️</b></p> 
 This assignment focuses on simulating a 3-floor elevator control system using LEDs, buttons, and a buzzer. <br>
-Components 🧰: 💡 4 LEDs, 3 for the floors and 1 for the operational state of the elevator <br>
+Components 🧰:<br> 💡 4 LEDs, 3 for the floors and 1 for the operational state of the elevator <br>
                🔳 3 buttons, to call the elevator to the desired floor <br>
                🔉 1 buzzer, to let the individual know when the elevator has arrived, the doors are opening and closing <br>
                🪛 as many wires and resistors as needed <br>
