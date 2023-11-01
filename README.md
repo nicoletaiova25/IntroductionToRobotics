@@ -59,7 +59,7 @@ programmed floor, open the doors, wait, close them and then go to the next desir
 
  <br>
  
- ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/sketch_oct23b_copy_20231024232706.ino)
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homework2_elevator.ino)
  
 </details>
 
