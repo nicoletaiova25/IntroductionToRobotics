@@ -30,21 +30,20 @@ The main components we will use specifically for this task are an RGB led, 3 pot
 <details>
 <p><b>Assignment details 🗞️</b></p> 
 This assignment focuses on simulating a 3-floor elevator control system using LEDs, buttons, and a buzzer. <br>
-Components 🧰: 💡 4 LEDs, 3 for the floors and 1 for the operational state of the elevator
-               🔳 3 buttons, to call the elevator to the desired floor
-               🔉 1 buzzer, to let the individual know when the elevator has arrived, the doors are opening and closing
-               🪛 as many wires and resistors as needed
+Components 🧰: 💡 4 LEDs, 3 for the floors and 1 for the operational state of the elevator <br>
+               🔳 3 buttons, to call the elevator to the desired floor <br>
+               🔉 1 buzzer, to let the individual know when the elevator has arrived, the doors are opening and closing <br>
+               🪛 as many wires and resistors as needed <br>
 <br>
  <b>Tehnical Task</b>
- <details>Design a control system that simulates a 3-floor elevator using the Arduino platform. Here are the specific requirements:
+ <details>Design a control system that simulates a 3-floor elevator using the Arduino platform. Here are the specific requirements:<br>
      • LED Indicators: Each of the 3 LEDs should represent one of the 3 floors. The LED corresponding to the current floor should light up.
-Additionally, another LED should represent the elevator’s operational state. It should blink when the elevator is moving and remain static when stationary.
-     • Buttons: Implement 3 buttons that represent the call buttons from the3 floors. When pressed, the elevator should simulate movement towardsthe floor after a short interval (2-3 seconds).
-     • Buzzer: The buzzer should sound briefly during the following scenarios:
-                    – Elevator arriving at the desired floor (something resembling a ”cling”).
-                    – Elevator doors closing and movement (pro tip: split them into 2 different sounds)
-     • State Change & Timers: If the elevator is already at the desired floor, pressing the button for that floor should have no effect. Otherwise, after a button press, the elevator should ”wait for the doors to close” and then ”move” to the corresponding floor. If the elevator is in movement, it should either do nothing or it should stack its decision (get to the first
-programmed floor, open the doors, wait, close them and then go to the next desired floor).
+Additionally, another LED should represent the elevator’s operational state. It should blink when the elevator is moving and remain static when stationary. <br>
+     • Buttons: Implement 3 buttons that represent the call buttons from the3 floors. When pressed, the elevator should simulate movement towardsthe floor after a short interval (2-3 seconds). <br>
+     • Buzzer: The buzzer should sound briefly during the following scenarios: <br>
+                    – Elevator arriving at the desired floor (something resembling a ”cling”). <br>
+                    – Elevator doors closing and movement (pro tip: split them into 2 different sounds) <br>
+     • State Change & Timers: If the elevator is already at the desired floor, pressing the button for that floor should have no effect. Otherwise, after a button press, the elevator should ”wait for the doors to close” and then ”move” to the corresponding floor. If the elevator is in movement, it should either do nothing or it should stack its decision (get to the first programmed floor, open the doors, wait, close them and then go to the next desired floor). <br>
     • Debounce: Remember to implement debounce for the buttons to avoid unintentional repeated button presses.</details>
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
