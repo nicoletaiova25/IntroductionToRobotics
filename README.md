@@ -84,11 +84,11 @@ The initial position should be on the DP. The current position always blinks (ir
 
 <br>
 
- ### 🎞️ A video showcasting functionality of assignment: [Video]
+ ### 🎞️ A video showcasting functionality of assignment: [Video](https://youtube.com/shorts/xklG7r3SEkc?feature=share)
 
  <br>
  
- ### 💻 The code: [You can find it here]
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homework3_7segmentDisplay.ino)
  
 </details>
 
