@@ -62,4 +62,33 @@ Additionally, another LED should represent the elevator’s operational state. I
  
 </details>
 
+# Homework-3 7 Segemnt Display Drawing
+
+<details>
+<p><b>Assignment details 🗞️</b></p> 
+ <br>
+This assingment requires using the joystick to control the position ofthe segment and ”drawing” on the display. The movement between segments should be natural, meaning they should jump from the current position only to neighbors, but without passing through ”walls”.
+<b>Requirements</b><br>
+The initial position should be on the DP. The current position always blinks (irrespective of the fact that the segment is on or off). Use the joystick to move from one position to neighbors (see table for corresponding movement). Short pressing the button toggles the segment state from ON to OFF or from OFF to ON. Long pressing the button resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
+
+ ![image](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/d6dbb440-0643-4a47-8250-c6fb169df43b)
+
+
+
+<br>
+<p><b>Setup of the assignment 📷 </b></p>
+![7segment](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/3e532aed-b1af-44e3-9ed3-c1b9fa0574dc)
+
+![7segmentclar](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/a34ed096-ab1a-4e5f-ac67-ffc2bad21598)
+
+
+<br>
+
+ ### 🎞️ A video showcasting functionality of assignment: [Video]
+
+ <br>
+ 
+ ### 💻 The code: [You can find it here]
+ 
+</details>
 
