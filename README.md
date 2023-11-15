@@ -93,7 +93,7 @@ The initial position should be on the DP. The current position always blinks (ir
  
 </details>
 
-#Homework4 - Stopwatch Timer
+# Homework4 - Stopwatch Timer
 
 <details>
 <p><b>Assignment details 🗞️</b></p> 
