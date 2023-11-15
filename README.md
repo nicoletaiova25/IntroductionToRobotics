@@ -128,6 +128,9 @@ A LED
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
+![stopwatch](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/564de18a-074c-4d37-b686-74e0d2630dc4)
+
+
 <br>
 
  ### 🎞️ A video showcasting functionality of assignment: [Video](https://youtu.be/IAuIUipVpyk?feature=shared)
