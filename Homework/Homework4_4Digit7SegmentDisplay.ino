@@ -210,8 +210,8 @@ void makeItStartAndPause(){
       inPauseMode = false;
       hasReseted = false;
       canDisplay = false;
-      /*ledState = LOW; //in case the led has been turn ON in reset but we decided not to cycle the saved laps, we turn the led OFF again
-      digitalWrite(ledPin, ledState);*/
+      ledState = LOW; //in case the led has been turn ON in reset but we decided not to cycle the saved laps, we turn the led OFF again
+      digitalWrite(ledPin, ledState);
     }
     else{ //if not it's in Pause Mode and can be reseted
       inPauseMode = true;
