@@ -2,8 +2,14 @@
 
 Laboratory assignments for the Robotics Introduction Course, completed during the third year of study at the Faculty of Mathematics and Computer Science, University of Bucharest. Each assignment has got included the instructions we had to follow, implementation guidelines, code samples, and also is accompanied by image files.
 
+# What you can find here
+1. Homework - RGB LED [✴️](#hmwk1) 
+2. Homework - ELEVATOR [✴️](#hmwk2) 
+3. Homework - 7-SEGMENT DISPLAY DRAWING [✴️](#hmwk3) 
+4. Homework - STOPWATCH TIMER [✴️](#hmwk4) 
 
-# Homework-1 RGB
+<a name="hmwk1"></a>
+## Homework-1 RGB
 
 <details>
 <p><b>Assignment details 🗞️</b></p> 
@@ -26,7 +32,8 @@ The main components we will use specifically for this task are an RGB led, 3 pot
  
 </details>
 
-# Homework-2 Elevator
+<a name="hmwk2"></a>
+## Homework-2 Elevator
 <details>
 <p><b>Assignment details 🗞️</b></p> 
 This assignment focuses on simulating a 3-floor elevator control system using LEDs, buttons, and a buzzer. <br>
@@ -62,7 +69,8 @@ Additionally, another LED should represent the elevator’s operational state. I
  
 </details>
 
-# Homework-3 7 Segemnt Display Drawing
+<a name="hmwk3"></a>
+## Homework-3 7 Segemnt Display Drawing
 
 <details>
 <p><b>Assignment details 🗞️</b></p> 
@@ -93,7 +101,8 @@ The initial position should be on the DP. The current position always blinks (ir
  
 </details>
 
-# Homework4 - Stopwatch Timer
+<a name="hmwk4"></a>
+## Homework4 - Stopwatch Timer
 
 <details>
 <p><b>Assignment details 🗞️</b></p> 
