@@ -88,6 +88,7 @@ The initial position should be on the DP. The current position always blinks (ir
 
 ![7segment](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/3e532aed-b1af-44e3-9ed3-c1b9fa0574dc)
 
+
 ![7segmentclar](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/a34ed096-ab1a-4e5f-ac67-ffc2bad21598)
 
 
