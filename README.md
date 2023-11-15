@@ -130,7 +130,7 @@ A LED
 
 <br>
 
- ### 🎞️ A video showcasting functionality of assignment:
+ ### 🎞️ A video showcasting functionality of assignment: [Video](https://youtu.be/IAuIUipVpyk?feature=shared)
 
  <br>
  
