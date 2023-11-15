@@ -20,7 +20,7 @@ The main components we will use specifically for this task are an RGB led, 3 pot
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
-![Imagine WhatsApp 2023-10-24 la 22 14 33_be484245](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/92c4fabb-56cb-4d59-b390-5244c7a50cbb)
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/92c4fabb-56cb-4d59-b390-5244c7a50cbb.jpg" width="400" height="500">
 
 <br>
 
@@ -55,9 +55,9 @@ Additionally, another LED should represent the elevator’s operational state. I
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
-![elv1](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/0e9abe97-24fb-41d3-8fbf-baefbb4b64d0)
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/0e9abe97-24fb-41d3-8fbf-baefbb4b64d0.jpg" width="400" height="500">
 
-![elv2](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/eb3093d3-a9a3-4971-b545-1cdf62830541)
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/eb3093d3-a9a3-4971-b545-1cdf62830541.jpg" width="400" height="500">
 
 <br>
 
@@ -86,10 +86,10 @@ The initial position should be on the DP. The current position always blinks (ir
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
-![7segment](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/3e532aed-b1af-44e3-9ed3-c1b9fa0574dc)
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/3e532aed-b1af-44e3-9ed3-c1b9fa0574dc.jpg" width="400" height="500">
 
 
-![7segmentclar](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/a34ed096-ab1a-4e5f-ac67-ffc2bad21598)
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/a34ed096-ab1a-4e5f-ac67-ffc2bad21598.jpg" width="400" height="500">
 
 
 <br>
@@ -112,24 +112,24 @@ Using the 4 digit 7 segment display and 3 buttons, this assigment requires imple
 Neccessary:  The starting value of the 4 digit 7 segment display shouldbe ”000.0”. The buttons should have the following functionalities:<br>
 – Button 1: Start / pause.<br>
 – Button 2: Reset (if in pause mode). Reset saved laps (if in lap viewing mode).<br>
-– Button 3: Save lap (if in counting mode), cycle through last saved laps (up to 4 laps).<br>
+– Button 3: Save lap (if in counting mode), cycle through last saved laps (up to 4 laps).<br><br>
 <b>Rules of the workflow:</b><br>
 1. Display shows ”000.0”. When pressing the Start button, the timer should start.<br>
 2. During timer counter, each time you press the lap button, you should save that timer’s value in memory (not persistent, it is OK to be deleted upon reset), up to 4 laps (or more if you want); pressing the 5th time should override the 1st saved one. If you press the reset button while timer works, nothing happens. If you press the pause button, the timer stops. <br>
 3. In Pause Mode, the lap flag button doesn’t work anymore. Pressing the reset button resets you to 000.0. <br>
-4. After reset, you can now press the flag buttons to cycle through the lap times. Each time you press the flag button, it takes you to the next saved lap. Pressing it continuously should cycle you through it continuously. Pressing the reset button while in this state resets all your flags and takes the timer back to ”000.0”. <br>
+4. After reset, you can now press the flag buttons to cycle through the lap times. Each time you press the flag button, it takes you to the next saved lap. Pressing it continuously should cycle you through it continuously. Pressing the reset button while in this state resets all your flags and takes the timer back to ”000.0”. <br><br>
 
 <b>Components used</b> <br>
 A 4-Digit 7-segment display 🖥️
 3 buttons 🔲
-Resistors and wires
-A LED
-
+Resistors and wires 🪛
+A LED 💡
+<br>
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
-![stopwatch](https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/564de18a-074c-4d37-b686-74e0d2630dc4)
 
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/564de18a-074c-4d37-b686-74e0d2630dc4.jpg" width="400" height="500">
 
 <br>
 
