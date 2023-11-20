@@ -16,15 +16,18 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 This assignment focuses on controlling each channel (Red, Green, and Blue) of  an  RGB  LED  using  individual  potentiometers.   By  the  end  of  this  task, we  will  gain  experience  in  interfacing  potentiometers  with  the  Arduino  and controlling RGB LEDs based on the analog readings. <br>
 The main components we will use specifically for this task are an RGB led, 3 potentiometers, resistors and as many wires as needed. <br>
 
+<p><b>Electrical scheme</b></p>
+
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/ce070ffa-b757-4207-b943-45da46103d37.png" width="400" height="500">
 
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
-<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/92c4fabb-56cb-4d59-b390-5244c7a50cbb.jpg" width="400" height="500">
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/9b02530c-3707-450b-912f-c404d49e19cd.jpg" width="400" height="500">
 
 <br>
 
- ### 🎞️ A video showcasting functionality of assignment: [Video](https://youtu.be/oJoWSr1SlDc)
+ ### 🎞️ A video showcasting functionality of assignment: [Video](https://youtu.be/9celDTJKHCI)
 
  <br>
  
