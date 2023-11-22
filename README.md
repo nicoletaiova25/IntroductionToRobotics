@@ -187,7 +187,7 @@ RGB LED💡
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
 
-<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assetsf1bbf503-8ffb-4514-8281-b3e641b7a740.jpg" width="400" height="500">
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/f1bbf503-8ffb-4514-8281-b3e641b7a740.jpg" width="400" height="500">
 
 <br>
 
