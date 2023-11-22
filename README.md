@@ -6,7 +6,8 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 1. Homework - RGB LED [✴️](#hmwk1) 
 2. Homework - ELEVATOR [✴️](#hmwk2) 
 3. Homework - 7-SEGMENT DISPLAY DRAWING [✴️](#hmwk3) 
-4. Homework - STOPWATCH TIMER [✴️](#hmwk4) 
+4. Homework - STOPWATCH TIMER [✴️](#hmwk4)
+5. Homework - MENU [✴️](#hmwk5)
 
 <a name="hmwk1"></a>
 ## Homework-1 RGB
@@ -147,5 +148,53 @@ A LED 💡
  <br>
  
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework4_4Digit7SegmentDisplay.ino)
+ 
+</details>
+
+
+<a name="hmwk5"></a>
+## Homework5 - Pseudo-Smart Environment Monitor and Logger
+
+<details>
+<p><b>Assignment details 🗞️</b></p> 
+<br>
+Develop a ”Smart Environment Monitor and Logger” using Arduino. This system will utilize various sensors to gather environmental data, log this data into EEPROM, and provide both visual feedback via an RGB LED and user interaction through a Serial Menu.<br>
+Neccessary:  Menu Structure   <br><br>
+1. Sensor Settings
+   1.1 Sensors Sampling Interval.
+   1.2 Ultrasonic Alert Threshold. 
+   1.3 LDR Alert Threshold. 
+   1.4 Back // Return to main menu
+2. Reset Logger Data
+   2.1 Yes.
+   2.2 No.
+3. System Status
+   3.1 Current Sensor Readings
+   3.2 Current Sensor Settings
+   3.3 Display Logged Data
+   3.2 Back
+4. RGB LED Control
+   4.1 Manual Color Control
+   4.2 LED: Toggle Automatic ON/OFF
+   4.3 Back
+ 
+<b>Components used</b> <br>
+Ultrasonic Sensor (HC-SR04) 
+LDR (Light-Dependent Resistor) aka Photocell aka Photoresistor aka Light Sensor 
+Resistors and wires 🪛
+RGB LED💡
+<br>
+<br>
+<p><b>Setup of the assignment 📷 </b></p>
+
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assetsf1bbf503-8ffb-4514-8281-b3e641b7a740.jpg" width="400" height="500">
+
+<br>
+
+ ### 🎞️ A video showcasting functionality of assignment: 🌠Not here yet🌠
+
+ <br>
+ 
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework5_Menu.ino)
  
 </details>
