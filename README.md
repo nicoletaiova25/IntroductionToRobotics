@@ -191,7 +191,9 @@ RGB LED💡
 
 <br>
 
- ### 🎞️ A video showcasting functionality of assignment: 🌠Not here yet🌠
+ ### 🎞️ A video showcasting functionality of assignment: 🌠[The video to see the LED](https://youtube.com/shorts/BZy-QLIXm08?feature=share)
+[The video to see the Menu](https://youtu.be/dfeNue5wNA4)
+I couldn't make it work with pausing the video in between so 2 videos it it 🌠
 
  <br>
  
