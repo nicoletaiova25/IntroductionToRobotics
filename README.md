@@ -182,12 +182,10 @@ Neccessary:  Menu Structure   <br><br>
    4.3 Back
  
 <b>Components used</b> <br>
-<li>
-Ultrasonic Sensor (HC-SR04) 
-LDR (Light-Dependent Resistor) aka Photocell aka Photoresistor aka Light Sensor 
-Resistors and wires 🪛
-RGB LED💡
-</li>
+Ultrasonic Sensor (HC-SR04) <br>
+LDR (Light-Dependent Resistor) aka Photocell aka Photoresistor aka Light Sensor <br>
+Resistors and wires 🪛<br>
+RGB LED💡<br>
 <br>
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
@@ -216,13 +214,12 @@ I couldn't make it work with pausing the video in between so 2 videos it is 🌠
 Develop a small game on the 8x8 matrix using Arduino. I chose to do a game Bomberman style, while following the requirements. Said requirements of the game must-have are: displaying three types of elements( a player that blinks slowly, a bomb that blinks faster than the player and walls that don't blink, but they are getting blown away. The walls are randomly generated on 50-75% of the matrix and the player is moving around with the help of the joystick and destroys the walls by planting bombs and detonating them.<br>
  
 <b>Components used</b> <br>
-<li>
-Joystick 🕹️ 
-8x8 LED Matrix  
-Resistors, capacitors and wires 🪛
-LED💡
+Joystick 🕹️  <br>
+8x8 LED Matrix  <br>
+Resistors, capacitors and wires 🪛 <br>
+LED💡 <br>
 Buzzer 🔉
-</li>
+
 <br>
 <b>Rules of the game: </b><br>
 The matrix will firstly display a greeting image (HI!). To start the game user must press the joystick on time. The walls and the player will be displayed. Using the joystick, player can be moved around. To place the bomb, the joystick button needs to be pressed. To detonate the bomb the button is to be pressed again. Don't get startled by the sound, couldn't make it more bomb like, so it is what it is (also used a resistor of 10 ohms, the 110 one was suppressing the sound too much). 
@@ -235,8 +232,7 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 
 <br>
 
- ### 🎞️ A video showcasting functionality of assignment: 🌠
-[The video](https://youtu.be/A4NL7QThA4M) 🌠
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/A4NL7QThA4M) 🌠
 
  <br>
  
