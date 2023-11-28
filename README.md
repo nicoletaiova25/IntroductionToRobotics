@@ -8,6 +8,7 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 3. Homework - 7-SEGMENT DISPLAY DRAWING [✴️](#hmwk3) 
 4. Homework - STOPWATCH TIMER [✴️](#hmwk4)
 5. Homework - MENU [✴️](#hmwk5)
+6. Homework - 8x8 LED MATRIX GAME [✴️](#hmwk6)
 
 <a name="hmwk1"></a>
 ## Homework-1 RGB
@@ -188,6 +189,43 @@ RGB LED💡
 <p><b>Setup of the assignment 📷 </b></p>
 
 <img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/f1bbf503-8ffb-4514-8281-b3e641b7a740.jpg" width="400" height="500">
+
+<br>
+
+ ### 🎞️ A video showcasting functionality of assignment: 🌠
+[The video to see the LED](https://youtube.com/shorts/BZy-QLIXm08?feature=share)
+[The video to see the Menu](https://youtu.be/dfeNue5wNA4)
+I couldn't make it work with pausing the video in between so 2 videos it is 🌠
+
+ <br>
+ 
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework5_Menu.ino)
+ 
+</details>
+
+<a name="hmwk6"></a>
+## Homework6 - Mini 8x8 LED Matrix Game
+
+<details>
+<p><b>Assignment details 🗞️</b></p> 
+<br>
+Develop a small game on the 8x8 matrix using Arduino. I chose to do a game Bomberman style, while following the requirements. Said requirements of the game must-have are: displaying three types of elements( a player that blinks slowly, a bomb that blinks faster than the player and walls that don't blink, but they are getting blown away. The walls are randomly generated on 50-75% of the matrix and the player is moving around with the help of the joystick and destroys the walls by planting bombs and detonating them.<br>
+ 
+<b>Components used</b> <br>
+Joystick 🕹️ 
+8x8 LED Matrix  
+Resistors, capacitors and wires 🪛
+LED💡
+Buzzer 🔉
+<br>
+<b>Rules of the game: </b><br>
+The matrix will firstly display a greeting image (HI!). To start the game user must press the joystick on time. The walls and the player will be displayed. Using the joystick, player can be moved around. To place the bomb, the joystick button needs to be pressed. To detonate the bomb the button is to be pressed again. Don't get startled by the sound, couldn't make it more bomb like, so it is what it is (also used a resistor of 10 ohms, the 110 one was suppressing the sound too much). 
+After all the walls are destroyed user can see the score in the Serial Monitor, greetings image is again displayed and user can play again.
+<br>
+<p><b>Setup of the assignment 📷 </b></p>
+
+
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/74fc714e-1d9c-413f-b2fc-f738a0b494ab.jpg" width="500" height="500">
 
 <br>
 
