@@ -228,7 +228,7 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 <p><b>Setup of the assignment 📷 </b></p>
 
 
-<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/74fc714e-1d9c-413f-b2fc-f738a0b494ab.jpg" width="600" height="500">
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/74fc714e-1d9c-413f-b2fc-f738a0b494ab.jpg" width="500" height="600">
 
 <br>
 
