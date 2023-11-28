@@ -131,10 +131,12 @@ Neccessary:  The starting value of the 4 digit 7 segment display shouldbe ”000
 4. After reset, you can now press the flag buttons to cycle through the lap times. Each time you press the flag button, it takes you to the next saved lap. Pressing it continuously should cycle you through it continuously. Pressing the reset button while in this state resets all your flags and takes the timer back to ”000.0”. <br><br>
 
 <b>Components used</b> <br>
+<li>
 A 4-Digit 7-segment display 🖥️
 3 buttons 🔲
 Resistors and wires 🪛
 A LED 💡
+</li>
 <br>
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
@@ -180,10 +182,12 @@ Neccessary:  Menu Structure   <br><br>
    4.3 Back
  
 <b>Components used</b> <br>
+<li>
 Ultrasonic Sensor (HC-SR04) 
 LDR (Light-Dependent Resistor) aka Photocell aka Photoresistor aka Light Sensor 
 Resistors and wires 🪛
 RGB LED💡
+</li>
 <br>
 <br>
 <p><b>Setup of the assignment 📷 </b></p>
@@ -212,11 +216,13 @@ I couldn't make it work with pausing the video in between so 2 videos it is 🌠
 Develop a small game on the 8x8 matrix using Arduino. I chose to do a game Bomberman style, while following the requirements. Said requirements of the game must-have are: displaying three types of elements( a player that blinks slowly, a bomb that blinks faster than the player and walls that don't blink, but they are getting blown away. The walls are randomly generated on 50-75% of the matrix and the player is moving around with the help of the joystick and destroys the walls by planting bombs and detonating them.<br>
  
 <b>Components used</b> <br>
+<li>
 Joystick 🕹️ 
 8x8 LED Matrix  
 Resistors, capacitors and wires 🪛
 LED💡
 Buzzer 🔉
+</li>
 <br>
 <b>Rules of the game: </b><br>
 The matrix will firstly display a greeting image (HI!). To start the game user must press the joystick on time. The walls and the player will be displayed. Using the joystick, player can be moved around. To place the bomb, the joystick button needs to be pressed. To detonate the bomb the button is to be pressed again. Don't get startled by the sound, couldn't make it more bomb like, so it is what it is (also used a resistor of 10 ohms, the 110 one was suppressing the sound too much). 
