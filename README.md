@@ -225,17 +225,15 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 <p><b>Setup of the assignment 📷 </b></p>
 
 
-<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/74fc714e-1d9c-413f-b2fc-f738a0b494ab.jpg" width="500" height="500">
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/74fc714e-1d9c-413f-b2fc-f738a0b494ab.jpg" width="600" height="500">
 
 <br>
 
  ### 🎞️ A video showcasting functionality of assignment: 🌠
-[The video to see the LED](https://youtube.com/shorts/BZy-QLIXm08?feature=share)
-[The video to see the Menu](https://youtu.be/dfeNue5wNA4)
-I couldn't make it work with pausing the video in between so 2 videos it is 🌠
+[The video](https://youtu.be/A4NL7QThA4M) 🌠
 
  <br>
  
- ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework5_Menu.ino)
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework7MatrixGame.ino)
  
 </details>
