@@ -250,10 +250,10 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 <br>
 
  1. Intro Message - When powered, a greeting message is shown on the LCD
- 2. Menu - user can scroll using joystick through the options displayed and choose what they want
-    a. Start Game, the game is displayed on the matrix
-    b. Settings, with 3 options itself, set intensity to LCD, set intensity to matrix, return to menu
-    c. About - details, it displays the github of the creator (mine, obviously)
+ 2. Menu - user can scroll using joystick through the options displayed and choose what they want<br>
+    a. Start Game, the game is displayed on the matrix<br>
+    b. Settings, with 3 options itself, set intensity to LCD, set intensity to matrix, return to menu<br>
+    c. About - details, it displays the github of the creator (mine, obviously)<br>
  3. End Message -  it displays 'GAME OVER' and the score, goes back to menu
  4. During Gameplay - it displays the lives of the player and the time since the game began
 
@@ -264,7 +264,7 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/rWYjC3Rg-bc?feature=shared) 🌠
 
-## 🤡 Sometimes it connects to the universe and receives messages: [Blooper](https://youtube.com/shorts/nsyfeJaSUA4?feature=shared)
+### 🤡 Sometimes it connects to the universe and receives messages: [Blooper](https://youtube.com/shorts/nsyfeJaSUA4?feature=shared)
  <br>
  
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
