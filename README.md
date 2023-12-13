@@ -262,11 +262,11 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 <img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/f20ebd7f-653d-462d-adec-c74624af9f11).jpg" width="500" height="600">
 <br>
 
- ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video] 🌠
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/rWYjC3Rg-bc?feature=shared) 🌠
 
-## 🤡 Sometimes it connects to the universe and receives messages: [Blooper]
+## 🤡 Sometimes it connects to the universe and receives messages: [Blooper](https://youtube.com/shorts/nsyfeJaSUA4?feature=shared)
  <br>
  
- ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework7MatrixGame.ino)
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
 
 </details>
