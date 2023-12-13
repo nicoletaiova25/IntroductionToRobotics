@@ -9,6 +9,7 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 4. Homework - STOPWATCH TIMER [✴️](#hmwk4)
 5. Homework - MENU [✴️](#hmwk5)
 6. Homework - 8x8 LED MATRIX GAME [✴️](#hmwk6)
+7. Homework - GAME CHECKPOINT [✴️](#hmwk7)
 
 <a name="hmwk1"></a>
 ## Homework-1 RGB
@@ -238,4 +239,34 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
  
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework7MatrixGame.ino)
  
+</details>
+
+<a name="hmwk7"></a>
+## Homework67 - Game Checkpoint
+
+<details>
+ <p>Mind it is still a work in progress, good things take time 🌠 </p>
+<p><b>Assignment details 🗞️</b></p> 
+<br>
+
+ 1. Intro Message - When powered, a greeting message is shown on the LCD
+ 2. Menu - user can scroll using joystick through the options displayed and choose what they want
+    a. Start Game, the game is displayed on the matrix
+    b. Settings, with 3 options itself, set intensity to LCD, set intensity to matrix, return to menu
+    c. About - details, it displays the github of the creator (mine, obviously)
+ 3. End Message -  it displays 'GAME OVER' and the score, goes back to menu
+ 4. During Gameplay - it displays the lives of the player and the time since the game began
+
+<br>
+<p><b>Setup of the assignment 📷 </b></p>
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/f20ebd7f-653d-462d-adec-c74624af9f11).jpg" width="500" height="600">
+<br>
+
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video] 🌠
+
+## 🤡 Sometimes it connects to the universe and receives messages: [Blooper]
+ <br>
+ 
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Homework7MatrixGame.ino)
+
 </details>
