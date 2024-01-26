@@ -1,0 +1,265 @@
+//some variables for controling the leds and the buttons
+
+#define CHOICE_OFF      0 //Used to control LEDs
+#define CHOICE_NONE     0 //Used to check buttons
+#define CHOICE_RED  (1 << 0)
+#define CHOICE_GREEN    (1 << 1)
+#define CHOICE_BLUE (1 << 2)
+#define CHOICE_YELLOW   (1 << 3)
+
+//declaring variables for the leds
+const int LED_RED = 10;
+const int LED_GREEN = 3;
+const int LED_BLUE = 13;
+const int LED_YELLOW = 5;
+
+//declaring the buttons
+const int BUTTON_RED = 9;
+const int BUTTON_GREEN = 2;
+const int BUTTON_BLUE = 12;
+const int BUTTON_YELLOW = 6;
+
+//declaring the buzzer
+const int buzzer = 8;
+
+//declaring game details
+const int ROUNDS_TO_WIN = 10;
+const int ENTRY_TIME_LIMIT = 3000; //time for the user to press the button before the game times out
+
+//declaring some variables to avoid magic numbers
+const int MEMORY_STATE = 0;
+
+//declaring game state varianles
+byte gameMode = MEMORY_STATE; 
+byte gameBoard[32]; //contains the combination of buttons as we play
+byte gameRound;
+
+//declaring flags
+bool gamestarted = false;
+
+void setup(){
+  pinMode(BUTTON_RED, INPUT_PULLUP);
+  pinMode(BUTTON_GREEN, INPUT_PULLUP);
+  pinMode(BUTTON_BLUE, INPUT_PULLUP);
+  pinMode(BUTTON_YELLOW, INPUT_PULLUP);
+
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_BLUE, OUTPUT);
+  pinMode(LED_YELLOW, OUTPUT);
+
+  pinMode(buzzer, OUTPUT);
+
+  gameMode = MEMORY_STATE;
+  //play_winner(); // After setup is complete, say hello to the world
+}
+
+void loop(){
+  //attractMode(); //blink the lights while waiting for the user to press a button
+  // if(gamestarted == false){
+  //   digitalWrite(LED_BLUE, LOW);
+  //   digitalWrite(LED_GREEN, LOW);
+  //   digitalWrite(LED_YELLOW, LOW);
+  //   digitalWrite(LED_RED, LOW);
+  //   if (checkButton() == CHOICE_GREEN){ //if button pressed
+  //     gamestarted = true;
+  //   }
+  // }
+  //   if (gamestarted && gameMode == MEMORY_STATE){
+  //     //attractMode();
+  //     //play the game 
+  //     if (play_game() == true){
+  //       play_winner(); //player won, buzzer sings happily
+  //     }
+  //     else {
+  //       play_loser(); // player lost, buzzer sings sadly
+  //     }
+  //   }
+   attractMode(); // Blink lights while waiting for user to press a button
+
+
+
+  // Indicate the start of game play
+
+  setLEDs(CHOICE_RED | CHOICE_GREEN | CHOICE_BLUE | CHOICE_YELLOW); // Turn all LEDs on
+
+  delay(1000);
+
+  setLEDs(CHOICE_OFF); // Turn off LEDs
+
+  delay(250);
+
+
+
+  if (gameMode == MEMORY_STATE)
+
+  {
+
+    // Play memory game and handle result
+
+    if (play_game() == true) 
+
+      play_winner(); // Player won, play winner tones
+
+    else 
+
+      play_loser(); // Player lost, play loser tones
+
+  }
+}
+
+bool play_game(){
+  gameRound = 0; //resets game to the beggining
+  while (gameRound < ROUNDS_TO_WIN){
+    add_to_moves(); //add a button to the current moves, then play 
+    playMoves(); //play back the current game
+    for (byte currentMove = 0; currentMove < gameRound; currentMove++){
+      byte choice = wait_for_button(); //read what button the user is pressing
+      if (choice == 0) return false; // timed out, player loses
+      if (choice != gameBoard[currentMove]) return false; //if the button pressed is the wrong one player loses
+    }
+    delay(1000);
+  }
+  return true; //player went through all rounds and won
+}
+
+void playMoves(){
+  for (byte currentMove = 0; currentMove <gameRound; currentMove++){
+    toner(gameBoard[currentMove], 150);
+    delay(150);
+  }
+}
+
+void add_to_moves(){
+  byte newButton = random(0, 4);
+  if (newButton == 0){
+    newButton = CHOICE_RED;
+  } else if (newButton == 1){
+    newButton = CHOICE_GREEN;
+  } else if (newButton == 2){
+    newButton = CHOICE_BLUE;
+  } else if (newButton == 3){
+    newButton = CHOICE_YELLOW;
+  }
+  gameBoard[gameRound++] = newButton; //add this new button to the game array
+}
+
+byte checkButton(){
+  if (digitalRead(BUTTON_BLUE) == 0) {
+    return CHOICE_BLUE;
+  }
+  else if (digitalRead(BUTTON_GREEN) == 0){
+    return CHOICE_GREEN;
+  }
+  else if (digitalRead(BUTTON_RED) == 0){
+    return CHOICE_RED;
+  }
+  else if (digitalRead(BUTTON_YELLOW) == 0){
+    return CHOICE_YELLOW;
+  }else {
+    return CHOICE_NONE; //if no button is pressed return faslse
+  }
+}
+
+void setLEDs(byte leds){
+  if ((leds & CHOICE_RED) != 0)
+    digitalWrite(LED_RED, HIGH);
+  else
+    digitalWrite(LED_RED, LOW);
+  if ((leds & CHOICE_GREEN) != 0)
+    digitalWrite(LED_GREEN, HIGH);
+  else
+    digitalWrite(LED_GREEN, LOW);
+  if ((leds & CHOICE_BLUE) != 0)
+    digitalWrite(LED_BLUE, HIGH);
+  else
+    digitalWrite(LED_BLUE, LOW);
+  if ((leds & CHOICE_YELLOW) != 0)
+    digitalWrite(LED_YELLOW, HIGH);
+  else
+    digitalWrite(LED_YELLOW, LOW);
+}
+
+byte wait_for_button(){
+  long startTIme = millis(); //gets the time the funciton is called
+  while ((millis() - startTIme) < ENTRY_TIME_LIMIT){ //loop until too much time passed
+    byte button = checkButton();
+    if (button != CHOICE_NONE){
+      toner(button, 150); //play the button user just pressed
+      while(checkButton() != CHOICE_NONE); //waiting for release button
+      delay(10);
+      return button;
+    }
+  }
+  return CHOICE_NONE; //if it gets to this returm, time is out
+}
+
+void toner(byte button_choice, int buzz_length_ms){
+  setLEDs(button_choice); //turns on a LED
+  switch (button_choice){
+    case CHOICE_RED: 
+      buzz_sound(buzz_length_ms, 1136);
+      break;
+    case CHOICE_GREEN:
+      buzz_sound(buzz_length_ms, 568);
+      break;
+    case CHOICE_BLUE:
+      buzz_sound(buzz_length_ms, 851);
+      break;
+    case CHOICE_YELLOW:
+      buzz_sound(buzz_length_ms, 638);
+      break;
+  }
+  setLEDs(CHOICE_OFF); //turns off all LEDs
+}
+
+void buzz_sound( int buzz_length_ms, int buzz_delay_us){
+  long buzz_length_us = buzz_length_ms * (long)1000; //milliseconds to microseconds
+  while (buzz_length_us > (buzz_delay_us * 2)){
+    buzz_delay_us -= buzz_delay_us*2; //decrrease play time
+    digitalWrite(buzzer, HIGH);
+    delayMicroseconds(buzz_delay_us);
+    digitalWrite(buzzer, LOW);
+    delayMicroseconds(buzz_delay_us);
+  }
+}
+
+void play_winner(void){
+  //attractMode();
+  winner_sound();
+}
+
+void winner_sound(){
+  for (byte x = 250; x > 70; x--){
+    for(byte y = 0; y < 3; y++){
+        digitalWrite(buzzer, HIGH);
+        delayMicroseconds(x);
+        digitalWrite(buzzer, LOW);
+        delayMicroseconds(x);
+    }
+  }
+}
+
+void play_loser(){
+  //attractMode();
+  buzz_sound(255, 1500);
+  gamestarted = false;
+}
+
+void attractMode(void){
+  while(1) 
+  {
+    setLEDs(CHOICE_RED);
+    delay(100);
+    if (checkButton() != CHOICE_NONE) return;
+    setLEDs(CHOICE_BLUE);
+    delay(100);
+    if (checkButton() != CHOICE_NONE) return;
+    setLEDs(CHOICE_GREEN);
+    delay(100);
+    if (checkButton() != CHOICE_NONE) return;
+    setLEDs(CHOICE_YELLOW);
+    delay(100);
+    if (checkButton() != CHOICE_NONE) return;
+  }
+}
