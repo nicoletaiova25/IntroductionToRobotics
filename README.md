@@ -10,6 +10,9 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 5. Homework - MENU [✴️](#hmwk5)
 6. Homework - 8x8 LED MATRIX GAME [✴️](#hmwk6)
 7. Homework - GAME CHECKPOINT [✴️](#hmwk7)
+8. Homework - Sensor Radar [✴️](#hmwk8)
+9. Homework - Memory Game [✴️](#hmwk9)
+10. Homework - Alarm Clock [✴️](#hmwk10)
 
 <a name="hmwk1"></a>
 ## Homework-1 RGB
@@ -242,7 +245,7 @@ After all the walls are destroyed user can see the score in the Serial Monitor, 
 </details>
 
 <a name="hmwk7"></a>
-## Homework67 - Game Checkpoint
+## Homework7 - Game Checkpoint
 
 <details>
  <p>Mind it is still a work in progress, good things take time 🌠 </p>
@@ -297,4 +300,101 @@ I know rules are long and might be boring to read, but give it a try. If you don
 
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
 
+</details>
+
+<a name="hmwk8"></a>
+## Homework8 - Arduino Radar
+
+<details>
+ <p><b>Assignment details 🌠 <b></p>
+ This Arduino-based radar project incorporates an ultrasonic sensor and servo motor to create a dynamic scanning system. The sensor, mounted on the servo motor, sweeps a designated area within its range, providing a sweeping lateral motion covering a 180-degree span. The radar detects the absence or presence of objects within a range. When an object is in close proximity of the radar, an LED lights up and a buzzer makes a sound.  <br>
+  I was inspired of the radars used on ships, like the ones shown in movies, when you see the enemy or a danger displayed by a red dot.
+
+ <br>
+ The ultrasonic sensor connects to the Arduino board with VCC to 5V, GND to GND PIN, TRIG to Pin 2, and ECHO to Pin 3. Meanwhile, the servo motor integrates with the system with the RED wire to 5V, BROWN wire to GND, and ORANGE wire to Pin 4. A pragmatic approach involves securing the ultrasonic sensor to the servo motor using a glue gun for a temporary yet effective solution
+ <br>
+
+<b>Components used</b> <br>
+<li>
+ Ultrasonic Sensor - HC-SR04 🧰
+ SG90 Micro-servo motor 🛥️
+ Buzzer 🔈
+ LED 💡
+ 10Ω resistor for the buzzer 🧰
+ Wires as needed
+</li>
+
+<p><b>Setup of the assignment 📷 </b></p>
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/6b7d95fc-38d4-4a4d-8d48-22cdf98803f0).jpg" width="500" height="600">
+<br>
+<p>Pictures of Serial Monitor, the sensor Readings</p>
+<div align="left">
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/d1b31662-a7c9-470e-8888-5a4f27b2db9c).jpg" width="500" height="600">
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/551b8ea8-1c30-4b17-bb6e-06fce2ab00bd).jpg" width="500" height="600">
+</div>
+<br>
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtube.com/shorts/lMAeM_8pv84?feature=share) 🌠
+ <br>
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
+</details>
+
+<a name="hmwk9"></a>
+## Homework9 - Sequence memory game
+
+<details>
+ <p><b>Assignment details 🌠 <b></p>
+Introducing a sequence memory game reminiscent of Simon Says, this project incorporates key components to challenge and engage users. The setup includes four LEDs with resistors, four buttons, one buzzer.
+I know you said RGB LED, but it was late at night and I didn't read throughly the assignment and I forgot to use it, sorry.
+ <b> Pattern Generation:</b>
+A random pattern is generated, illuminating specific LEDs in a sequence that players need to memorize.
+<b>User Input: </b>
+Players respond by reproducing the displayed pattern within a reasonable timeframe using the corresponding buttons.
+ <br>
+
+<b>Components used</b> <br>
+<li>
+ 4 buttons 🔲
+ Buzzer 🔈
+ 4 LEDs 💡
+ 4 220Ω resistors 🧰
+ 10Ω resistor for buzzer
+ Wires as needed
+</li>
+
+<p><b>Setup of the assignment 📷 </b></p>
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/25d11058-4999-485b-9bef-f58332caa198).jpg" width="500" height="600">
+<br>
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/8gQ3iuOyGok) 🌠
+ 
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
+</details>
+
+<a name="hmwk10"></a>
+## Homework10 - Alarm clock
+
+<details>
+ <p><b>Assignment details 🌠 <b></p>
+Presenting an "Alarm Clock" project equipped with an LCD display, buzzer, and RGB LED, this multifunctional timekeeping device offers both absolute and relative time-setting capabilities. <br>
+The primary functionalities include setting absolute or relative times for alarm activation, user interaction through a button, and visual/audio feedback during alarm events.
+The system continuously checks elapsed time, displaying it on the LCD and activating the alarm when the specified duration is reached.
+User interaction is facilitated through a button, allowing the alarm to be stopped or the time to be reset.<br>
+Visual feedback is provided by the RGB LED, and audible feedback is produced by the buzzer.
+The LCD display serves as an informative interface, presenting elapsed time and relevant prompts.
+
+<b>Components used</b> <br>
+<li>
+ 1 button 🔲
+ Buzzer 🔈
+ RGB LED 💡
+ 220Ω resistor and 10Ω for the buzzer 🧰
+ LCD 🖥️
+ Wires as needed
+</li>
+
+<p><b>Setup of the assignment 📷 </b></p>
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/73ee0b57-bed4-49e5-95b3-f4db5726e35e).jpg" width="500" height="600">
+<br>
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/bMVSJ1CyToU) 🌠
+ 
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
 </details>
