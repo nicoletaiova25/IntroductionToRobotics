@@ -1,0 +1,147 @@
+//declare sensor variables
+const int echoPin = 9;
+const int trigPin = 10;
+//variables 
+long duration;
+int distance ;
+
+//declare RGB led variables
+const int led_RED = 5;
+const int led_GREEN = 6;
+const int led_BLUE = 7;
+
+//declare buzzer
+const int buzzerPin = 3;
+
+//declare buttons
+const int buttonPin_1 = 13;
+const int buttonPin_2 = 12;
+const int buttonPin_3 = 11;
+
+//variables
+const int combinationNumber = 3; //number of buttons that need to be pushed to stop the alarm, can be the same button 3 times, doesn't matter
+int setCombination[combinationNumber];
+bool combinationBeenSet = false; //made true when the combination is initialized
+int numberRead; //when reading buttons input
+int inputNumber;
+
+int buttonState = HIGH; //usual state of button
+int rgbState = LOW; //state for led
+int buzzerTone = 1000;
+bool combinationRight = false;
+bool ringAlarmSound = false;
+
+void setup() {
+  // put your setup code here, to run once:
+  //sensor 
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  //buzzer output
+  pinMode(buzzerPin, OUTPUT);
+  //RGB LED
+  pinMode(led_RED, OUTPUT);
+  pinMode(led_BLUE, OUTPUT);
+  pinMode(led_GREEN, OUTPUT);
+  //buttons
+  pinMode(buttonPin_1, INPUT_PULLUP);
+  pinMode(buttonPin_2, INPUT_PULLUP);
+  pinMode(buttonPin_3, INPUT_PULLUP);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  //when arduino starts the user needs to fix a combination for the buttons
+  calculateDistance();
+  if (combinationBeenSet == false){
+    digitalWrite(led_BLUE, HIGH);
+    tone(buzzerPin, 100, 100);
+    setButtons();
+  } else if (distance <= 50 && combinationBeenSet == true){
+      ringAlarmSound = true;
+  }
+  if (ringAlarmSound){
+      ringAlarm();
+      if (checkIfCombinationInput() == true && inputNumber == 3){
+        noTone(buzzerPin);
+        inputNumber = 0;
+        combinationRight = false;
+        digitalWrite(led_RED, LOW);
+        ringAlarmSound = false;
+      }
+  }
+
+}
+
+void setButtons(){
+
+  if( digitalRead(buttonPin_1) != buttonState){
+    setCombination[numberRead] = buttonPin_1;
+    numberRead++;
+  }
+  if( digitalRead(buttonPin_2) != buttonState){
+    setCombination[numberRead] = buttonPin_2;
+    numberRead++;
+  }
+  if( digitalRead(buttonPin_3) != buttonState){
+    setCombination[numberRead] = buttonPin_3;
+    numberRead++;
+  }
+  if(numberRead == 3){
+    combinationBeenSet = true;
+    numberRead = 0;
+    digitalWrite(led_BLUE, LOW);
+    noTone(buzzerPin);
+  }
+}
+
+void ringAlarm(){
+  tone(buzzerPin, buzzerTone, 500);
+  rgbState = !rgbState;
+  digitalWrite(led_RED, rgbState);
+}
+
+bool checkIfCombinationInput(){
+  if(inputNumber <= combinationNumber){
+    if( digitalRead(buttonPin_1) != buttonState){
+      if(setCombination[inputNumber] == buttonPin_1){
+        inputNumber++;
+        combinationRight = true;
+        return combinationRight;
+      } else combinationRight = false;
+    }
+    if( digitalRead(buttonPin_2) != buttonState){
+      if(setCombination[inputNumber] == buttonPin_2){
+        inputNumber++;
+        combinationRight = true;
+        return combinationRight;
+      } else combinationRight = false;
+    }
+    if( digitalRead(buttonPin_3) != buttonState){
+      if(setCombination[inputNumber] == buttonPin_3){
+        inputNumber++;
+        combinationRight = true;
+        return combinationRight;
+      } else combinationRight = false;
+    }
+   if(combinationRight == false && inputNumber == combinationNumber){
+    buzzerTone+=500;
+    inputNumber = 0;
+  }
+  }
+
+  return combinationRight;
+}
+
+
+//function to calculate the distance if an objects is in the range of the sensor
+int calculateDistance(){
+  digitalWrite(trigPin,LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin,HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin,LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration*0.034/2;
+  return distance;
+}
