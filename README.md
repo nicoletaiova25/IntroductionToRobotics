@@ -335,7 +335,7 @@ I know rules are long and might be boring to read, but give it a try. If you don
 <br>
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtube.com/shorts/lMAeM_8pv84?feature=share) 🌠
  <br>
- ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/SensorRadar)
 </details>
 
 <a name="hmwk9"></a>
@@ -366,7 +366,7 @@ Players respond by reproducing the displayed pattern within a reasonable timefra
 <br>
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/8gQ3iuOyGok) 🌠
  
- ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/MemoryGame)
 </details>
 
 <a name="hmwk10"></a>
@@ -396,5 +396,5 @@ The LCD display serves as an informative interface, presenting elapsed time and 
 <br>
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/bMVSJ1CyToU) 🌠
  
- ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/homeworkCheckpoint.ino)
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/AlarmClock)
 </details>
