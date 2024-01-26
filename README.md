@@ -9,7 +9,7 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 4. Homework - STOPWATCH TIMER [✴️](#hmwk4)
 5. Homework - MENU [✴️](#hmwk5)
 6. Homework - 8x8 LED MATRIX GAME [✴️](#hmwk6)
-7. Homework - GAME CHECKPOINT [✴️](#hmwk7)
+7. Homework - GAME CHECKPOINT [✴️](#hmwk7) <br>
 #EXTRA HOMEWORK
 8. Homework - Sensor Radar [✴️](#hmwk8)
 9. Homework - Memory Game [✴️](#hmwk9)
