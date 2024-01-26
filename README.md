@@ -10,9 +10,11 @@ Laboratory assignments for the Robotics Introduction Course, completed during th
 5. Homework - MENU [✴️](#hmwk5)
 6. Homework - 8x8 LED MATRIX GAME [✴️](#hmwk6)
 7. Homework - GAME CHECKPOINT [✴️](#hmwk7)
+#EXTRA HOMEWORK
 8. Homework - Sensor Radar [✴️](#hmwk8)
 9. Homework - Memory Game [✴️](#hmwk9)
 10. Homework - Alarm Clock [✴️](#hmwk10)
+11. Homework - Door Alarm [✴️](#hmwk11)
 
 <a name="hmwk1"></a>
 ## Homework-1 RGB
@@ -400,4 +402,33 @@ The LCD display serves as an informative interface, presenting elapsed time and 
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/bMVSJ1CyToU) 🌠
  
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/AlarmClock)
+</details>
+
+<a name="hmwk11"></a>
+## Homework11 - Door Alarm
+
+<details>
+ <p><b>Assignment details 🌠 <b></p>
+
+ This Arduino-based alarm system is designed for security applications, providing a customizable and compact solution for door or entrance monitoring. The system incorporates a distance sensor, buzzer, RGB LED, and three buttons, creating a versatile and effective alarm mechanism. The system allows users to set a secret combination to disarm the alarm, incorporating visual and audible alerts upon detecting motion within a specified range. I didn't use a box, mainly cause I didn't have one and I didn't show the functionality by a door, mainly cause I think my roommate is already pretty scared of my weekly wired bombs 💣 (imagine me putting a wired conception by the door, accent on me, I'd be scared too 💥<br>
+Initial Setup: Upon Arduino startup, the user sets the secret combination by pressing the specified buttons. The RGB LED indicates the setup phase. <br>
+Alarm Trigger: When an object is detected within 50cm, the system activates a loud alarm with a blinking red LED. <br>
+Disarming: Users can disarm the system by entering the secret combination. <br>
+~Warning: not the best code, but it works and it does the job, it was the only way it worked, I don't like it either. 🪗
+
+<b>Components used</b> <br>
+ Ultrasonic Sensor - HC-SR04 🧰 <br>
+ 3 buttons ⏏️ <br>
+ 3 220Ω resistors and a 10Ω resistor for the buzzer 🧰 <br>
+ RGB LED 💡 <br>
+ Buzzer 🔈 <br>
+ Wires as needed <br>
+
+ <p><b>Setup of the assignment 📷 </b></p>
+<img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/cbc3d1ad-6571-4801-a7fa-5938ecd78370).jpg" width="500" height="600">
+<br>
+
+ ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/Hfg8biUt9NY) 🌠
+ 
+ ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/Door%20Alarm)
 </details>
