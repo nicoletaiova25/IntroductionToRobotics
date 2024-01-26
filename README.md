@@ -316,12 +316,12 @@ I know rules are long and might be boring to read, but give it a try. If you don
 
 <b>Components used</b> <br>
 <li>
- Ultrasonic Sensor - HC-SR04 🧰
- SG90 Micro-servo motor 🛥️
- Buzzer 🔈
- LED 💡
- 10Ω resistor for the buzzer 🧰
- Wires as needed
+ Ultrasonic Sensor - HC-SR04 🧰 <br>
+ SG90 Micro-servo motor 🛥️ <br>
+ Buzzer 🔈<br>
+ LED 💡<br>
+ 10Ω resistor for the buzzer 🧰<br>
+ Wires as needed<br>
 </li>
 
 <p><b>Setup of the assignment 📷 </b></p>
@@ -333,6 +333,7 @@ I know rules are long and might be boring to read, but give it a try. If you don
 <img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/551b8ea8-1c30-4b17-bb6e-06fce2ab00bd).jpg" width="500" height="600">
 </div>
 <br>
+
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtube.com/shorts/lMAeM_8pv84?feature=share) 🌠
  <br>
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/SensorRadar)
@@ -353,17 +354,18 @@ Players respond by reproducing the displayed pattern within a reasonable timefra
 
 <b>Components used</b> <br>
 <li>
- 4 buttons 🔲
- Buzzer 🔈
- 4 LEDs 💡
- 4 220Ω resistors 🧰
- 10Ω resistor for buzzer
- Wires as needed
+ 4 buttons 🔲<br>
+ Buzzer 🔈<br>
+ 4 LEDs 💡<br>
+ 4 220Ω resistors 🧰<br>
+ 10Ω resistor for buzzer<br>
+ Wires as needed<br>
 </li>
 
 <p><b>Setup of the assignment 📷 </b></p>
 <img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/25d11058-4999-485b-9bef-f58332caa198).jpg" width="500" height="600">
 <br>
+
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/8gQ3iuOyGok) 🌠
  
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/MemoryGame)
@@ -383,17 +385,18 @@ The LCD display serves as an informative interface, presenting elapsed time and 
 
 <b>Components used</b> <br>
 <li>
- 1 button 🔲
- Buzzer 🔈
- RGB LED 💡
- 220Ω resistor and 10Ω for the buzzer 🧰
- LCD 🖥️
- Wires as needed
+ 1 button 🔲 <br>
+ Buzzer 🔈<br>
+ RGB LED 💡<br>
+ 220Ω resistor and 10Ω for the buzzer 🧰 <br>
+ LCD 🖥️<br>
+ Wires as needed<br>
 </li>
 
 <p><b>Setup of the assignment 📷 </b></p>
 <img src="https://github.com/nicoletaiova25/IntroductionToRobotics/assets/148574222/73ee0b57-bed4-49e5-95b3-f4db5726e35e).jpg" width="500" height="600">
 <br>
+
  ### 🎞️ A video showcasting functionality of assignment: 🌠 [The video](https://youtu.be/bMVSJ1CyToU) 🌠
  
  ### 💻 The code: [You can find it here](https://github.com/nicoletaiova25/IntroductionToRobotics/blob/main/Homework/AlarmClock)
