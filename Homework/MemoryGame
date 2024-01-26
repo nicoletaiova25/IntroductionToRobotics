@@ -55,57 +55,27 @@ void setup(){
 }
 
 void loop(){
-  //attractMode(); //blink the lights while waiting for the user to press a button
-  // if(gamestarted == false){
-  //   digitalWrite(LED_BLUE, LOW);
-  //   digitalWrite(LED_GREEN, LOW);
-  //   digitalWrite(LED_YELLOW, LOW);
-  //   digitalWrite(LED_RED, LOW);
-  //   if (checkButton() == CHOICE_GREEN){ //if button pressed
-  //     gamestarted = true;
-  //   }
-  // }
-  //   if (gamestarted && gameMode == MEMORY_STATE){
-  //     //attractMode();
-  //     //play the game 
-  //     if (play_game() == true){
-  //       play_winner(); //player won, buzzer sings happily
-  //     }
-  //     else {
-  //       play_loser(); // player lost, buzzer sings sadly
-  //     }
-  //   }
+  attractMode(); //blink the lights while waiting for the user to press a button
+   if(gamestarted == false){
+     digitalWrite(LED_BLUE, LOW);
+     digitalWrite(LED_GREEN, LOW);
+     digitalWrite(LED_YELLOW, LOW);
+     digitalWrite(LED_RED, LOW);
+     if (checkButton() == CHOICE_GREEN){ //if button pressed
+       gamestarted = true;
+     }
+   }
+     if (gamestarted && gameMode == MEMORY_STATE){
+       //attractMode();
+       //play the game 
+       if (play_game() == true){
+         play_winner(); //player won, buzzer sings happily
+       }
+       else {
+         play_loser(); // player lost, buzzer sings sadly
+       }
+     }
    attractMode(); // Blink lights while waiting for user to press a button
-
-
-
-  // Indicate the start of game play
-
-  setLEDs(CHOICE_RED | CHOICE_GREEN | CHOICE_BLUE | CHOICE_YELLOW); // Turn all LEDs on
-
-  delay(1000);
-
-  setLEDs(CHOICE_OFF); // Turn off LEDs
-
-  delay(250);
-
-
-
-  if (gameMode == MEMORY_STATE)
-
-  {
-
-    // Play memory game and handle result
-
-    if (play_game() == true) 
-
-      play_winner(); // Player won, play winner tones
-
-    else 
-
-      play_loser(); // Player lost, play loser tones
-
-  }
 }
 
 bool play_game(){
